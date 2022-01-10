@@ -59,7 +59,7 @@ app.get('/allusers', async (req,res) => {
 })
 
 // Endpoint to login with a user
-app.post('/sessions', async (req,res)=>{
+app.post('/login', async (req,res)=>{
   const user = await User.findOne({email:req.body.email})
   if(user && bcrypt.compareSync(req.body.password, user.password)){
     res.json({userId: user._id, accessToken: user.accessToken})
@@ -70,7 +70,7 @@ app.post('/sessions', async (req,res)=>{
 })
 
 // Endpoint to create a new user
-app.post('/users', async (req,res) => {
+app.post('/signup', async (req,res) => {
   try{
     // take a json request body and split into name, email password
     const {userName, email, password} = req.body;
@@ -89,8 +89,8 @@ app.post('/users', async (req,res) => {
 
 // Authenticated endpoint that returns logged in content 
 //use the authenticateUser function to protect the secrets endpoint
-app.get('/secrets', authenticateUser)
-app.get('/secrets', (req,res)=> {
+app.get('/content', authenticateUser)
+app.get('/content', (req,res)=> {
   res.json({secret: 'This is a super secret message'})
 })
 
