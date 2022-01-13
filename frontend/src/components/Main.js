@@ -1,16 +1,25 @@
 import React, { useEffect } from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch, batch } from "react-redux";
 import { useNavigate, Link } from "react-router-dom";
 
-
+import user from '../reducers/user'
 
 const Main = () => {
   const accessToken = useSelector((store) => store.user.accessToken);
   const navigate = useNavigate();
+  const dispatch = useDispatch()
 
+  const logout = () => {
+    batch(() => {
+        dispatch(user.actions.setUsername(null))
+        dispatch(user.actions.setAccessToken(null))
+
+        //localStorage.removeItem('user')
+    })
+}
   useEffect(() => {
     if (!accessToken) {
-      navigate("/");
+      navigate("/signin");
     }
   }, [accessToken, navigate]);
 
@@ -18,7 +27,7 @@ const Main = () => {
   return (
     <div>
       <div>
-        <Link to="/" onClick={() => accessToken === null}>Log out</Link>
+        <Link to="/" onClick={logout}>Log out</Link>
       </div>
       <img
         alt="Very mysterious content"
