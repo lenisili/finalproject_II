@@ -4,7 +4,7 @@ const user = createSlice({
     name: 'user',
     initialState: {
       userId: null,
-      userName: null,
+      username: null,
       accessToken: null,
       error: null,
     },
@@ -12,8 +12,8 @@ const user = createSlice({
         setUserId: (store, action) => {
             store.userId = action.payload
         },
-        setUserName: (store, action) => {
-            store.userName = action.payload
+        setUsername: (store, action) => {
+            store.username = action.payload
         },
         setAccessToken: (store, action) => {
             store.accessToken = action.payload

@@ -2,20 +2,23 @@ import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { useNavigate, Link } from "react-router-dom";
 
+
+
 const Main = () => {
   const accessToken = useSelector((store) => store.user.accessToken);
   const navigate = useNavigate();
 
   useEffect(() => {
     if (!accessToken) {
-      navigate("/login");
+      navigate("/");
     }
   }, [accessToken, navigate]);
 
+  
   return (
     <div>
       <div>
-        <Link to="/login">Log out</Link>
+        <Link to="/" onClick={() => accessToken === null}>Log out</Link>
       </div>
       <img
         alt="Very mysterious content"
