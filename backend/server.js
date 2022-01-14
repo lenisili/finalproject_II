@@ -42,7 +42,6 @@ const authenticateUser = async (req, res, next) => {
   try {
     const user = await User.findOne({ accessToken });
     if (user) {
-      //req.user = user;
       next();
     } else {
       res.status(401).json({ 
@@ -58,19 +57,11 @@ const authenticateUser = async (req, res, next) => {
   
 };
 
-
 // Start defining your routes here
 
 app.get("/", (req, res) => {
   res.send("Hello world");
 });
-//app.get("/allusers", async (req, res) => {
-  //res.send(req.body)
-  //const allUsers = await User.find();
-  //res.status(200).json(allUsers);
-
-  //console.log("Sucessfully got all users!");
-//});
 
 // Authenticated endpoint that returns logged in content
 //use the authenticateUser function to protect the secrets endpoint
@@ -86,8 +77,7 @@ app.post('/signup', async (req, res) => {
   
   try {
     const salt = bcrypt.genSaltSync();
-    // take a json request body and split into name, email password
-    
+    // take a json request body and split into name, email password 
     // creates a new user instance using the userName, email, password. Password
     // is not a plaintext password, it is encrypted as hexideicmal representation
     
@@ -114,7 +104,6 @@ app.post('/signup', async (req, res) => {
       success: false
     });
   }
-  //console.log("Sucessfully added a user!");
 });
 
 // Endpoint to login with a user

@@ -47,7 +47,9 @@ img {
     background: #C35A5A;
     text-align: center;
     color:white;
+    font-weight:500;
     padding:2px;
+    border-radius: 2px 2px 0px 0px;
 }
 
 .choose-type {
@@ -87,6 +89,7 @@ input[type=radio] {
     padding:5px 20px;
     min-width:100px;
     margin:0 auto;
+    border-radius:2px;
 }
 
 .warning {
@@ -94,6 +97,11 @@ input[type=radio] {
     font-size:10px;
     margin-top:10px;
     text-align:center !important;
+}
+
+.warning-login {
+    color:red;
+    font-size:8px;
 }
 
 .login:disabled {
@@ -109,6 +117,7 @@ input[type=radio] {
 .logout a {
     color:white;
     text-decoration: none;
+    border-radius:2px;
 }
 
 .login:hover {

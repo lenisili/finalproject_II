@@ -14,6 +14,7 @@ const Login = () => {
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const errors = useSelector(store => store.user.error);
 
   useEffect(() => {
     if (accessToken) {
@@ -89,7 +90,7 @@ const Login = () => {
           onChange={(e) => setUsername(e.target.value)}
         />
 
-        <label htmlFor="password">Password</label>
+        <label htmlFor="password">Password {errors && <p className="warning-login">Please enter a password!</p>}</label> 
         <input
           id="password"
           type="password"
@@ -98,7 +99,7 @@ const Login = () => {
         />
         {mode === 'signup' ? <button disabled={username.length < 5} className="login" type="submit">Create user</button> : <button disabled={username.length < 5} className="login" type="submit">Login</button>}
         {username.length < 5 ? <p className="warning">Your username needs to be longer than 5 characters!</p> : <p></p>}
-
+        
       </form>
     </main>
   );
