@@ -5,6 +5,7 @@ import { Provider } from "react-redux";
 import { configureStore, combineReducers } from "@reduxjs/toolkit";
 
 // components
+import './app.css';
 import Main from "./components/Main";
 import Login from "./components/Login";
 import NotFound from "./components/NotFound";
