@@ -128,7 +128,7 @@ app.post("/signin", async (req, res) => {
         success: false,
       });
     }
-    console.log("Sucessfully logged in!");
+   
   } catch (error) {
     res.status(400).json({ response: error, success: false });
   }
