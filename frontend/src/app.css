@@ -17,12 +17,8 @@ body {
 .mainContainer {
   margin: 0 auto;
   margin:10px;
-  width:calc(100% - 20px);
-  min-height:350px;
   background:white;
   border-radius: 2px;
-  position:relative;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, .15);
 }
 
 /* .logged-in-content {
@@ -133,14 +129,12 @@ input[type=radio] {
     }
 
     .mainContainer {
-        max-width: 500px;
-        width:100%;
-        min-height:350px;
+        width:95%;
         margin:0 auto;
-      }
+    }
 
-      .logged-in {
-          min-height:400px;
-      }
+    .logged-in {
+        min-height:400px;
+    }
 
 }

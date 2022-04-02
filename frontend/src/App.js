@@ -6,8 +6,13 @@ import { configureStore, combineReducers } from "@reduxjs/toolkit";
 
 // components
 import './app.css';
+import Home from "./components/Home";
+import PodcastOverview from "./components/Podcastoverview";
+import PodcastDetails from "./components/PodcastDetails"
 import Main from "./components/Main";
 import Login from "./components/Login";
+import NavigationBar from "./components/Navigationbar";
+import Footer from "./components/Footer";
 import NotFound from "./components/NotFound";
 
 // Reducers
@@ -22,13 +27,18 @@ const store = configureStore({ reducer });
 export const App = () => {
   return (
     <Provider store={store}>
+      <NavigationBar />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Main />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/aktuelles" element={<Main />} />
+          <Route path="/episodes" element={<PodcastOverview />} />
+          <Route path="/episodes/id/:id" element={<PodcastDetails />}/>
           <Route path="/signin" element={<Login />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
+      <Footer />
     </Provider>
   );
 };

@@ -25,12 +25,12 @@ const Main = () => {
 
   return (
     <main className='mainContainer logged-in'>
-      <div className="top-login">This page is only shown if you are logged in</div>
+      <div className="top-login">Diese Seite wird dir nur angezeigt, wenn du ein registierter User bist</div>
       <img
         alt="Very mysterious content"
         src="https://i-viaplay-com.akamaized.net/viaplay-prod/701/548/1565958307-721566eb8de7d3222993a5bc884f6719889facee.jpg?width=1600&height=900"
       />
-      <h1>Welcome registered user......This is our secret content</h1>
+      <h1>Hier halten wir dich über exklusiven Neuigkeiten auf dem Laufenden</h1>
       <button className="login logout">
         <Link to="/" onClick={logout}>
           Log out

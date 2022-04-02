@@ -1,0 +1,90 @@
+[
+    {
+        "id":  "62020f55bab4bcd606330eaf",
+        "name": "kaffeepause cum tempore",
+        "episodenumber": 1,
+        "title" : "Jens Bergweiler: Vom BWL Studium an der LMU zum Start Up in Berlin",
+        "release_date": "16. Februar 2022",
+        "duration": "48 Minuten", 
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+        "audioplayer": "https://open.spotify.com/episode/0Czbp5OHT870Vuy8rOmLOn?si=16098bdad72b4957",
+        "image": "https://images.unsplash.com/photo-1589903308904-1010c2294adc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+    },
+    {
+        "id":  "62020f55bab4bcd606330eb0",
+        "name": "kaffeepause cum tempore",
+        "episodenumber": 2,
+        "title" : "Lena Simma: Wie kommt vom klassischen Jurastudium ins Projektmanagement?",
+        "release_date": "23. Februar 2022",
+        "duration": "52 Minuten", 
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+        "audioplayer": "https://open.spotify.com/episode/2Wsf3IcaLXtXF77mVzaVJk?si=72874f2df66346b1",
+        "image": "https://images.unsplash.com/photo-1589903308904-1010c2294adc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+    },
+    {
+        "id":  "62020f55bab4bcd606330eb1",
+        "name": "kaffeepause cum tempore",
+        "episodenumber": 3,
+        "title" : "Prüfungsphase: Was lernt man da für das Berufsleben?",
+        "release_date": "2. März 2022",
+        "duration": "42 Minuten", 
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+        "audioplayer": "https://open.spotify.com/episode/3txla1ncjY2n7LszVtIhK3?si=c67dc9b0d4814d0c",
+        "image": "https://images.unsplash.com/photo-1589903308904-1010c2294adc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+    },
+    {
+        "id":  "62020f55bab4bcd606330eb2",
+        "name": "kaffeepause cum tempore",
+        "episodenumber": 4,
+        "title" : "Studentenleben: Tipps wie du nix verpasst",
+        "release_date": "9. März 2022",
+        "duration": "58 Minuten", 
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+        "audioplayer": "https://open.spotify.com/episode/5k4CpdNyeHTnrBBhlsVimB?si=591b11a5b9d84333",
+        "image": "https://images.unsplash.com/photo-1589903308904-1010c2294adc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+    },
+    {
+        "id":  "62020f55bab4bcd606330eb3",
+        "name": "kaffeepause cum tempore",
+        "episodenumber": 5,
+        "title" : "Solene Hertli: Mit Umwegen zum klassischen Juraweg",
+        "release_date": "16. März 2022",
+        "duration": "41 Minuten", 
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+        "audioplayer": "https://open.spotify.com/episode/3eNS0gxLf0jBNzvkOyUjlU?si=7d2e42a7474c409b",
+        "image": "https://images.unsplash.com/photo-1589903308904-1010c2294adc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+    },
+    {
+        "id":  "62020f55bab4bcd606330eb4",
+        "name": "kaffeepause cum tempore",
+        "episodenumber": 6,
+        "title" : "Warum Praktika essentiell sind",
+        "release_date": "23. März 2022",
+        "duration": "49 Minuten", 
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+        "audioplayer": "https://open.spotify.com/episode/6qRJ80k7F1bPUQMmQPYAXe?si=9c0565ab073a4f20",
+        "image": "https://images.unsplash.com/photo-1589903308904-1010c2294adc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+    },
+    {
+        "id":  "62020f55bab4bcd606330eb5",
+        "name": "kaffeepause cum tempore",
+        "episodenumber": 7,
+        "title" : "Konzern oder Startup: Was passt besser zu dir?",
+        "release_date": "30. März 2022",
+        "duration": "53 Minuten", 
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+        "audioplayer": "https://open.spotify.com/episode/2vcku3b4LvAfxy9lMxuFlR?si=30585bf603c449e3",
+        "image": "https://images.unsplash.com/photo-1589903308904-1010c2294adc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+    },
+    {
+        "id":  "62020f55bab4bcd606330eb6",
+        "name": "kaffeepause cum tempore",
+        "episodenumber": 8,
+        "title" : "Erasmussemester: Only fun oder steckt mehr dahinter?",
+        "release_date": "6. April 2022",
+        "duration": "47 Minuten", 
+        "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+        "audioplayer": "https://open.spotify.com/episode/1JoDz8UesUq1T6o6aCzvPe?si=a0b25acca67e462b",
+        "image": "https://images.unsplash.com/photo-1589903308904-1010c2294adc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+    }
+]

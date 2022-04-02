@@ -59,6 +59,7 @@ const Login = () => {
       {mode === 'signup' ? <div className="top-login">Create a user</div> : <div className="top-login">Login with your user</div>}
       
       {/* <Link className="to-start" to="/">Go to start</Link> */}
+      <h1>Melde dich an um auf dem Laufenden zu bleiben!</h1>
       <div className="choose-type">
         <div className="signup">
           <input

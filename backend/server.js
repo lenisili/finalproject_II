@@ -4,6 +4,8 @@ import mongoose from "mongoose";
 import crypto from "crypto";
 import bcrypt from "bcrypt";
 
+import episodes from './data/episodes.json'
+
 const mongoUrl = process.env.MONGO_URL || "mongodb://localhost/authAPI";
 mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.set('useCreateIndex', true); //added due to deprecation error 26868
@@ -27,6 +29,29 @@ const UserSchema = new mongoose.Schema({
 
 const User = mongoose.model("User", UserSchema);
 
+const Episode = mongoose.model("Episode", {
+  id: String,
+  name: String,
+  episodenumber: Number,
+  title: String,
+  release_date: String,
+  duration: String, 
+  description: String,
+  audioplayer: String,
+  image: String,
+})
+
+if (process.env.RESET_DATABASE) {
+  const seedDatabase = async () => {
+    await Episode.deleteMany
+    episodes.forEach(item => {
+      const newEpisode = new Episode(item)
+      newEpisode.save()
+    })
+  }
+  seedDatabase()
+}
+
 
 //   PORT=9000 npm start
 const port = process.env.PORT || 8080;
@@ -48,7 +73,7 @@ const authenticateUser = async (req, res, next) => {
         response: {
           message:'Please log in'
         },
-         success: false 
+          success: false 
         });
     }
   } catch (error) {
@@ -70,6 +95,20 @@ app.get("/content", (req, res) => {
   res.json({ secret: "This is a super secret message" });
 });
 
+//getting all the episodes
+app.get('/episodes', (req, res) => {
+  res.json(episodes)
+})
+
+//get only one episode based on id
+app.get('/episodes/id/:id', async (req, res) => {
+  const episodeById = await  Episode.findById(req.params.id)
+  if (episodeById) {
+    res.json(episodeById)
+  } else {
+    res.status(404).json({error: "Episode not found"})
+  }
+})
 
 // Endpoint to create a new user
 app.post('/signup', async (req, res) => {
