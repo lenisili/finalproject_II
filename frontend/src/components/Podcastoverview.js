@@ -19,10 +19,10 @@ const PodcastOverview = () => {
 
     return (
         <>
-       <Row xs={1} md={2} className="g-4" style={{ padding: '75px' }}>
+        <Row xs={1} md={2} className="g-4" style={{ padding: '75px' }}>
         {episodes.map((episode) => { 
             return (
-                <Col style={{ padding: '15px' }} key={episode._id}>
+                <Col style={{ padding: '15px' }} key={episode.id}>
                     <Card style={{ padding: '10px' }}>
                     <Card.Img 
                     variant="top"
@@ -42,7 +42,7 @@ const PodcastOverview = () => {
                                 {episode.release_date}
                             </Card.Text>
                         </Card.Body>
-                <Link className="episode" key={episode._id} to={`/episodes/id/${episode._id}`}>
+                <Link className="episode" key={episode.id} to={`/episodes/${episode.id}`}>
                     <Button variant="outline-dark" style={{ margin: '15px' }}>Hör rein</Button>
                     </Link>
                     </Card>

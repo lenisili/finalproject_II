@@ -101,14 +101,12 @@ app.get('/episodes', (req, res) => {
 })
 
 //get only one episode based on id
-app.get('/episodes/id/:id', async (req, res) => {
-  const episodeById = await  Episode.findById(req.params.id)
-  if (episodeById) {
-    res.json(episodeById)
-  } else {
-    res.status(404).json({error: "Episode not found"})
-  }
+app.get('/episodes/:id' , (req, res) => {
+  const id  = req.params.id
+  const showEpisodeID = episodes.filter((item) => item.id === id)
+  res.json(showEpisodeID)
 })
+
 
 // Endpoint to create a new user
 app.post('/signup', async (req, res) => {
@@ -167,7 +165,7 @@ app.post("/signin", async (req, res) => {
         success: false,
       });
     }
-   
+  
   } catch (error) {
     res.status(400).json({ response: error, success: false });
   }
