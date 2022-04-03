@@ -9,7 +9,7 @@ const PodcastDetails = () => {
     const [details, setDetails] = useState([])
 
     useEffect(() => {
-        fetch(`https://finalproject-ls-2.herokuapp.com/episodes/${id}`)
+        fetch(`http://localhost:8080/episodes/${id}`)
         .then((res) => res.json())
         .then((details) => {
             setDetails(details)
