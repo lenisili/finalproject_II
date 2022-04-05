@@ -12,7 +12,7 @@ const PodcastOverview = () => {
     const [episodes, setEpisodes] = useState([]);
 
     useEffect(() => {
-    fetch("http://localhost:8080/episodes")
+    fetch("https://finalproject-ls-2.herokuapp.com/episodes")
         .then((res) => res.json())
         .then((episodes) => setEpisodes(episodes));
     }, []);
@@ -26,7 +26,7 @@ const PodcastOverview = () => {
                     <Card style={{ padding: '10px' }}>
                     <Card.Img 
                     variant="top"
-                    class="img-fluid"
+                    className="img-fluid"
                     style={{ padding: '15px' }}
                     src={episode.image}
                     alt={episode.title}
